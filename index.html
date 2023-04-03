@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Refocus News Website</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_icons">
+            <img id="logo" src="images/icons/Logo.svg" alt="Refocus logo">
+            <button id="burger_menu" onclick="showNav()"><!-- icon set on main.sass --></button>
+        </div>
+        <nav>
+            <ul class="nav_list" id="site_pages">
+                <li class="nav_item"><a href="">Blog</a></li>
+                <li class="nav_item"><a href="">Our Courses</a></li>
+                <li class="nav_item"><a href="">Free webinars</a></li>
+                <li class="nav_item"><a href="">Reviews</a></li>
+            </ul>
+            <ul class="nav_list" id="site_login">
+                <li class="nav_item" id="sign_up"><a href="">Sign up</a></li>
+                <li class="nav_item"><button id="button_login">Log in</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-1.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">Front-End vs Back-End Developer: What's the Difference?</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">January 3, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">4,8 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-2.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">What is a Full Stack Developer?</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">January 12, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">3,2 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-3.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">What Are Soft Skills and How Do They Benefit Your Career?</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">January 22, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">2,6 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-4.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">IT Jobs: In-Demand, Available to Everyone, Ripe With Opportunity</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">January 29, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">2,4 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-5.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">7 Learning Tips for Data Science Self-Study</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">February 1, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">1,5 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-6.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">Hard Skills vs. Soft Skills:<br>Do You Really Need Both? Why?</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">February 10, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">4,9 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-7.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">What is JavaScript?</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">February 16, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">3,1 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-8.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">Who Is a Business Analyst:<br>Roles, Skills, Salaries, Job Prospects</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">February 22, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">2,4 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="news_image">
+                <img src="images/pictures/Image-9.png" alt="">
+            </div>
+            <button class="close" onclick="removeArticle(event)"><!-- icon set on main.sass --></button>
+            <div class="caption">
+                <button class="done" onclick="markAsRead(event)"><!-- icon set on main.sass --></button>
+                <h2 class="headline">How Much Do Data Analysts Make? 2023 Salary Guide</h2>
+                <hr>
+                <div class="card_footer">
+                    <span class="date">February 24, 2023</span>
+                    <div class="like_container">
+                        <span class="like_icon"><!-- icon set on main.sass --></span>
+                        <span class="like_count">2,6 k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="blog_links">
+            <h3 class="nav_title">BLOG</h3>
+            <ul class="nav_list">
+                <li class="nav_item">Data Analyst</li>
+                <li class="nav_item">Web Developer</li>
+            </ul>
+            <ul class="nav_list">
+                <li class="nav_item">Career</li>
+                <li class="nav_item">Success Stories</li>
+                <li class="nav_item">Resume</li>
+            </ul>
+            <ul class="nav_list">
+                <li class="nav_item">Hard Skills</li>
+                <li class="nav_item">Soft Skills</li>
+            </ul>
+        </div>
+        <div id="courses_links">
+            <h3 class="nav_title">OUR COURSES</h3>
+            <ul class="nav_list">
+                <li class="nav_item">Data Analytics</li>
+                <li class="nav_item">Web Development</li>
+            </ul>
+        </div>
+        <div id="socials_links">
+            <h4>Follow Us</h4>
+            <ul class="nav_list">
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_in.svg" alt="Linked In link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_insta.svg" alt="Instagram link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_fb.svg" alt="Facebook link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_twitter.svg" alt="Twitter link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_whatsup.svg" alt="Whatsup link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_tiktok.svg" alt="TikTok link"></a>
+                </li>
+                <li class="nav_item"><a href=""><img src="images/icons/socials/icon_youtube.svg" alt="YouTube link"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="legalities">
+            <h4>© Refocus Limited 2022</h4>
+            <ul class="nav_list">
+                <li class="nav_item"><a href=""></a>Privacy Policy</li>
+                <li>·</li>
+                <li class="nav_item"><a href=""></a>Terms of Use</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
